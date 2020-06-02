@@ -1,14 +1,501 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Hello Roman Boilerplate</title>
-  <script defer src="src/js/index.js"></script>
-  <link href="dist/styles/index.css" rel="stylesheet">
-</head>
-<body>
-  <h1>Hello Roman!</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Hello Roman Boilerplate</title>
+    <link href="dist/styles/index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+  </head>
+  <body>
+    <div class="overflow-hidden position-relative">
+      <nav id="navbar" class="navbar navbar-expand-sm navbar-light w-100">
+        <div class="container">
+          <a class="navbar-brand text-white text-uppercase" href="#home">Coffe.</a>
+          <button
+            class="navbar-toggler d-lg-none border-0"
+            type="button"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            id="navbarToggler"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="#about"
+                  ><small class="text-uppercase">About</small></a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="#bestsellers"
+                  ><small class="text-uppercase">Menu</small></a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a class="nav-link text-white" href="#testimonials"
+                  ><small class="text-uppercase">Testimonials</small></a
+                >
+              </li>
+              <li class="nav-item mx-3">
+                <a href="#appointment" type="button" class="btn btn-primary btn-md text-white py-2">
+                  Book a table
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section id="home" class="hero">
+        <div class="hero-carousel">
+          <div class="carousel-item-content slide-1">
+            <div class="container">
+              <div class="row justify-content-center align-items-center">
+                <div data-aos="fade-up" class="col-12 col-md-8 caption text-center">
+                  <span class="caption-decoration">Welcome</span>
+                  <h1 class="text-white text-uppercase">
+                    Creamy hot and ready to serve
+                  </h1>
+                  <p class="text-white mt-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam similique
+                    voluptates dolore laborum repellendus sed.
+                  </p>
+
+                  <a href="#appointment" class="btn btn-lg order-button btn-primary mt-5">
+                    Order Now
+                  </a>
+                  <a href="#bestsellers" class="btn btn-lg btn-outline-white mt-5">Menu</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item-content slide-2">
+            <div class="container">
+              <div class="row justify-content-center align-items-center">
+                <div data-aos="fade-up" class="col-12 col-md-8 caption text-center">
+                  <span class="caption-decoration">Welcome</span>
+                  <h1 class="text-white text-uppercase">
+                    Best Coffe in Europe
+                  </h1>
+                  <p class="text-white mt-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam similique
+                    voluptates dolore laborum.
+                  </p>
+
+                  <a href="#appointment" class="btn btn-lg order-button btn-primary mt-5">
+                    Order Now
+                  </a>
+                  <a href="#bestsellers" class="btn btn-lg btn-outline-white mt-5">Menu</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item-content slide-2">
+            <div class="container">
+              <div class="row justify-content-center align-items-center">
+                <div data-aos="fade-up" class="col-12 col-md-8 caption text-center">
+                  <span class="caption-decoration">Welcome</span>
+                  <h1 class="text-white text-uppercase">
+                    Lovely atmosphere
+                  </h1>
+                  <p class="text-white mt-3">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam similique
+                    voluptates dolore laborum repellendus sed.
+                  </p>
+
+                  <a href="#appointment" class="btn btn-lg order-button btn-primary mt-5">
+                    Order Now
+                  </a>
+                  <a href="#bestsellers" class="btn btn-lg btn-outline-white mt-5">Menu</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about py-6">
+        <div class="container py-5">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="image-container d-flex justify-content-center">
+                <img src="src/assets/images/about-1.jpg" class="main-image" alt="about-1" />
+                <div class="secondary-image">
+                  <img src="src/assets/images/about-2.jpg" alt="about-2" />
+                </div>
+                <div class="secondary-image">
+                  <img src="src/assets/images/about-3.jpg" alt="about-3" />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mt-5">
+              <div data-aos="fade-up">
+                <span class="caption-decoration">About</span>
+                <h2 class="text-white text-uppercase font-weight-bold">
+                  Years of Experience
+                </h2>
+                <p class="text-gray mt-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, aperiam?
+                  Commodi ratione facere voluptatum provident tempore dicta perferendis eaque quas
+                  adipisci deserunt ducimus saepe voluptatem dolores harum itaque laboriosam,
+                  temporibus ex odio minima ullam totam. Molestias voluptas vero porro provident
+                  illo libero, quas id impedit fugiat! Vero animi dolores officia?
+                </p>
+                <button class="btn btn-outline-primary btn-lg mt-2">View Blog</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="gallery row no-gutters">
+        <div data-aos="fade-up" class="col-12 col-md-6 col-lg-3 px-0 gallery-item">
+          <div class="image-container"></div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="50"
+          class="col-12 col-md-6 col-lg-3 px-0 gallery-item"
+        >
+          <div class="image-container"></div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="100"
+          class="col-12 col-md-6 col-lg-3 px-0 gallery-item"
+        >
+          <div class="image-container"></div>
+        </div>
+        <div
+          data-aos="fade-up"
+          data-aos-delay="150"
+          class="col-12 col-md-6 col-lg-3 px-0 gallery-item"
+        >
+          <div class="image-container"></div>
+        </div>
+      </section>
+      <section id="bestsellers" class="bestsellers py-5">
+        <div class="container py-5">
+          <div class="row text-center justify-content-center">
+            <div class="col-12 col-md-7" data-aos="fade-up">
+              <span class="caption-decoration">Bestsellers</span>
+              <h2 class="text-white text-uppercase font-weight-bold">
+                We serve delicious food and drinks
+              </h2>
+              <p class="text-gray mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt autem aliquam
+                porro incidunt atque?
+              </p>
+            </div>
+          </div>
+          <div class="row justify-content-around mt-5">
+            <div class="col-md-12 col-lg-4 my-2 my-lg-0">
+              <div data-aos="fade-up" data-aos-offset="230" class="card h-100 rounded-0">
+                <div class="card-img-container overflow-hidden">
+                  <img
+                    src="src/assets/images/bestsellers-1.jpg"
+                    class="card-img rounded-0"
+                    alt="pancakes"
+                  />
+                </div>
+                <div
+                  class="card-body 4 d-flex flex-column justify-content-between align-items-start"
+                >
+                  <h4
+                    class="card-title text-white text-uppercase d-flex justify-content-between w-100"
+                  >
+                    Hot Pancakes
+                    <span class="text-primary">$14.99</span>
+                  </h4>
+                  <p class="card-text text-gray">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id nam necessitatibus
+                    vel consequatur distinctio officia!
+                  </p>
+                  <a href="#home" class="btn btn-outline-primary">See in Menu</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4 my-2 my-lg-0">
+              <div
+                data-aos="fade-up"
+                data-aos-offset="230"
+                data-aos-delay="100"
+                class="card h-100 rounded-0"
+              >
+                <div class="card-img-container overflow-hidden">
+                  <img
+                    src="src/assets/images/bestsellers-2.jpg"
+                    class="card-img rounded-0"
+                    alt="cake"
+                  />
+                </div>
+                <div
+                  class="card-body p-4 d-flex flex-column justify-content-between align-items-start"
+                >
+                  <h4
+                    class="card-title text-white text-uppercase d-flex justify-content-between w-100"
+                  >
+                    Cake
+                    <span class="text-primary">$10.99</span>
+                  </h4>
+                  <p class="card-text text-gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aspernatur
+                    reprehenderit illum rem maxime, consequuntur fugit ut nihil!
+                  </p>
+                  <a href="#home" class="btn btn-outline-primary">See in Menu</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-4 my-2 my-lg-0">
+              <div
+                data-aos="fade-up"
+                data-aos-offset="230"
+                data-aos-delay="200"
+                class="card h-100 rounded-0"
+              >
+                <div class="card-img-container overflow-hidden">
+                  <img
+                    src="src/assets/images/bestsellers-3.jpg"
+                    class="card-img rounded-0"
+                    alt="cappuccino"
+                  />
+                </div>
+                <div
+                  class="card-body p-4 d-flex flex-column justify-content-between align-items-start"
+                >
+                  <h4
+                    class="card-title text-white text-uppercase d-flex justify-content-between w-100"
+                  >
+                    Cappucino
+                    <span class="text-primary">$6.99</span>
+                  </h4>
+                  <p class="card-text text-gray">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis aperiam quae
+                    accusantium officiis incidunt quod similique distinctio itaque qui.
+                  </p>
+                  <a href="#home" class="btn btn-outline-primary">See in Menu</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="visit bg-primary py-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 text-lg-right text-left">
+              <div class="mr-md-5 mb-4 mb-lg-0" data-aos="fade-up">
+                <span class="text-white caption-decoration">Visit Us</span>
+                <h2 class="text-black text-uppercase font-weight-bold">Lovely location</h2>
+                <p class="text-black mt-4">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quibusdam magni
+                  explicabo modi repellendus nemo nam, praesentium autem in, et velit quaerat
+                  voluptatum fuga eum porro quo incidunt laboriosam quidem?
+                </p>
+                <a href="#appointment" class="btn btn-outline-black btn-lg mt-2">See on map</a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+              <div class="row">
+                <div class="col-5 px-1">
+                  <img
+                    class="w-100 h-100"
+                    data-aos="fade"
+                    data-aos-delay="100"
+                    src="src/assets/images/visit-1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="col-7 px-1">
+                  <img
+                    class="w-100 mb-2"
+                    data-aos="fade"
+                    data-aos-delay="150"
+                    src="src/assets/images/visit-2.jpg"
+                    alt=""
+                  />
+                  <img
+                    class="w-100"
+                    data-aos="fade"
+                    data-aos-delay="150"
+                    src="src/assets/images/visit-3.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="testimonials py-5 parallax-background">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-7 text-center" data-aos="fade-up">
+              <span class="caption-decoration">Testimonials</span>
+              <h2 class="text-white text-uppercase font-weight-bold">
+                What clients say about us
+              </h2>
+              <p class="text-gray mt-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sunt autem aliquam
+                porro incidunt atque?
+              </p>
+            </div>
+          </div>
+          <div class="slick-carousel testimonials-carousel mt-5">
+            <div class="carousel-item">
+              <div class="card border-0 p-2 rounded-0 d-flex flex-row bg-white">
+                <img class="card-img-top mt-3" src="src/assets/images/face.jpg" alt="" />
+                <div class="card-body p-2 p-md-4">
+                  <h4 class="card-title mb-0">John Doe</h4>
+                  <smal>Chief Customer</smal>
+                  <p class="card-text mt-2 text-gray">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, delectus!
+                    Assumenda beatae eos.
+                  </p>
+                </div>
+                <img src="src/assets/images/quote.png" alt="" class="quote" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card border-0 p-2 rounded-0 d-flex flex-row">
+                <img class="card-img-top mt-3" src="src/assets/images/face.jpg" alt="" />
+                <div class="card-body p-2 p-md-4">
+                  <h4 class="card-title mb-0">John Doe</h4>
+                  <smal>Chief Customer</smal>
+                  <p class="card-text mt-2 text-gray">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, delectus!
+                    Assumenda beatae eos.
+                  </p>
+                </div>
+                <img src="src/assets/images/quote.png" alt="" class="quote" />
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card border-0 p-2 rounded-0 d-flex flex-row">
+                <img class="card-img-top mt-3" src="src/assets/images/face.jpg" alt="" />
+                <div class="card-body p-2 p-md-4">
+                  <h4 class="card-title mb-0">John Doe</h4>
+                  <smal>Chief Customer</smal>
+                  <p class="card-text mt-2 text-gray">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, delectus!
+                    Assumenda beatae eos.
+                  </p>
+                </div>
+                <img src="src/assets/images/quote.png" alt="" class="quote" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="appointment py-5" id="appointment">
+        <div class="row">
+          <div class="col-lg-6 col-12" data-aos="fade-up">
+            <form class="appointment-form py-5">
+              <div class="row justify-content-center mx-1 mx-md-0">
+                <div class="col-lg-10 col-xl-8 col-12">
+                  <h3 class="text-white mb-5">Book a table</h3>
+                  <div class="d-flex flex-lg-row flex-column">
+                    <div class="form-group flex-grow-1">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="first-name"
+                        id="firstName"
+                        placeholder="First name"
+                      />
+                    </div>
+                    <div class="form-group flex-grow-1 ml-lg-3 ml-0">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="last-name"
+                        id="lastName"
+                        placeholder="Last name"
+                      />
+                    </div>
+                  </div>
+                  <div class="d-flex flex-lg-row flex-column">
+                    <div class="form-group flex-grow-1">
+                      <input type="date" value="2020-05-30" class="form-control" name="date" />
+                    </div>
+                    <div class="form-group flex-grow-1 ml-lg-3 ml-0">
+                      <input type="time" value="13:30" class="form-control" name="time" />
+                    </div>
+                    <div class="form-group flex-grow-1 ml-lg-3 ml-0">
+                      <input type="text" class="form-control" name="phone" placeholder="Phone" />
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div class="form-group flex-grow-1">
+                      <textarea
+                        class="form-control"
+                        name="message"
+                        placeholder="Message"
+                        rows="2"
+                      ></textarea>
+                    </div>
+                    <div class="form-group flex-grow-1 ml-3 mb-3">
+                      <button type="submit" class="btn btn-lg btn-primary w-100">
+                        Appointment
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div id="map" class="map w-100 overflow-hidden"></div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer py-5">
+        <div class="container">
+          <div class="row mt-md-5">
+            <div class="col-12 col-md-4 mt-0 mb-5">
+              <h5 class="text-uppercase text-white">About</h5>
+              <p class="mt-3">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla dicta quo rem
+                explicabo! Vitae cupiditate vero inventore voluptates autem maxime, provident amet?
+                Harum illum voluptas recusandae commodi facilis beatae eius.
+              </p>
+              <div class="icons-container d-flex text-primary mt-md-5">
+                <img src="src/assets/images/facebook.svg" class="icon mr-3" alt="fb" />
+                <img src="src/assets/images/instagram.svg" class="icon mx-3" alt="insta" />
+                <img src="src/assets/images/twitter.svg" class="icon mx-3" alt="twitter" />
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <h5 class="text-uppercase text-white">Opening hours</h5>
+              <p class="mb-0">Wednesday-Sunday</p>
+              <small>8AM - 23PM</small>
+              <h5 class="text-uppercase text-white mt-5">Contact Info</h5>
+              <p class="mb-0">Address</p>
+              <small>34 Street Name, City Name Here, United States</small>
+              <p class="mb-0 mt-3">Phone</p>
+              <small>+13 321 998 432</small>
+              <p class="mb-0 mt-3">E-Mail</p>
+              <small>info@restaurant.gmail</small>
+            </div>
+            <div class="col-12 col-md-4 mt-5 mt-md-0">
+              <h5 class="text-uppercase text-white">Quick Links</h5>
+              <a href="" class="text-primary d-block text-decoration-none">About</a>
+              <a href="" class="text-primary d-block text-decoration-none my-1">Services</a>
+              <a href="" class="text-primary d-block text-decoration-none my-1">Menu</a>
+              <a href="" class="text-primary d-block text-decoration-none my-1">Contact</a>
+            </div>
+          </div>
+          <div class="row mt-5">
+            <p class="text-center w-100 mt-5">
+              Copyright &COPY;2020 All rights reserved | This website concept was made by Jan Rapacz
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="dist/js/bundle.js"></script>
+  </body>
 </html>

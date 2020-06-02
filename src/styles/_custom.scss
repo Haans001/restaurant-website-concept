@@ -1,0 +1,31 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+$font-family-sans-serif: "Montserrat", sans-serif;
+
+$theme-colors: (
+  "primary": #c49b63,
+  "secondary": #120f0f,
+  "white": #fff,
+  "gray": #808080,
+  "light-gray": #5f6871,
+  "black": black,
+);
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}

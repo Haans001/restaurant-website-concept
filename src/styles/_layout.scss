@@ -1,0 +1,36 @@
+.py-6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.btn {
+  border-radius: 0;
+}
+.btn.btn-lg {
+  font-size: 0.8rem;
+  padding: 1rem 1.4rem;
+}
+.btn.btn-primary {
+  color: white;
+}
+
+.btn.btn-primary:hover {
+  background: transparent;
+}
+.btn.btn-outline-primary:hover {
+  background: map-get($theme-colors, "primary");
+  color: black;
+}
+.btn.btn-outline-white:hover {
+  background: map-get($theme-colors, "primary");
+  color: black;
+  border-color: map-get($theme-colors, "primary");
+}
+
+.caption-decoration {
+  font-family: "Great Vibes";
+  color: map-get($theme-colors, "primary");
+  font-size: 2rem;
+  transform: translateY(50%);
+  display: inline-block;
+}

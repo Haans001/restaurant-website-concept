@@ -1,12 +1,13 @@
 {
-  "name": "hello-roman-boilerplate",
+  "name": "restaurant-website-concept",
   "version": "1.0.0",
-  "description": "Simple boilerplate for static website",
+  "description": "Page for my portfolio made with bootstrap",
   "scripts": {
     "build:scss": "node-sass --output-style compressed -o dist/styles src/styles",
     "watch:scss": "onchange -i -v \"./src/styles/*.scss\" -- npm run build:scss",
+    "build:js": "browserify ./src/js/index.js -o  ./dist/js/bundle.js",
+    "watch:js": "watchify ./src/js/index.js -o  ./dist/js/bundle.js",
     "lint:js": "eslint --fix ./src/js/*.js",
-    "watch:js": "onchange -i -v \"./src/js/*.js\" -- npm run lint:js",
     "start": "browser-sync -s -f \"./index.html, dist/**/*, src/**/*\"",
     "watch:all": "parallelshell \"npm start\" \"npm run watch:scss\" \"npm run watch:js\""
   },
@@ -16,10 +17,18 @@
     "browser-sync": "^2.26.7",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.20.2",
     "node-sass": "^4.13.1",
     "onchange": "^6.1.0",
     "parallelshell": "^3.0.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aos": "^2.3.4",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "leaflet": "^1.6.0",
+    "popper.js": "^1.16.1",
+    "slick-carousel-browserify": "^1.6.12"
+  }
 }
