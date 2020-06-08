@@ -21,7 +21,8 @@
     "eslint-plugin-import": "^2.20.2",
     "node-sass": "^4.13.1",
     "onchange": "^6.1.0",
-    "parallelshell": "^3.0.1"
+    "parallelshell": "^3.0.1",
+    "watchify": "^3.11.1"
   },
   "dependencies": {
     "aos": "^2.3.4",
