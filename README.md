@@ -1,5 +1,5 @@
 # restaurant-website-concept
-I decided to recreate one of the website templates in order to improve my HTML and CSS skills.
+I decided to recreate one of the website templates in order to improve my HTML and CSS skills. It uses Bootstrap with some customizations and Javascript for scroll animations.
 ## Technologies & tools
 * SCSS
 * Bootstrap
