@@ -1,5 +1,5 @@
 # restaurant-website-concept
-I decided to recreate one of the website templates in order to improve my HTML and CSS skills. It uses Bootstrap with some customizations and Javascript for scroll animations.
+I decided to recreate one of the website templates in order to improve my HTML and CSS skills. It uses Bootstrap with some customizations and Javascript for scroll animations. [Live version.](https://haans001.github.io/restaurant-website-concept/)
 ## Technologies & tools
 * SCSS
 * Bootstrap
