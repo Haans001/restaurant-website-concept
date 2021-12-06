@@ -1,0 +1,14 @@
+# restaurant-website-concept
+I decided to recreate one of the website templates in order to improve my HTML and CSS skills.
+## Technologies & tools
+* SCSS
+* Bootstrap
+* Jquery
+* Eslint
+## Setup
+To run this project locally, install it using NPM:
+```
+$ git clone https://github.com/Haans001/restaurant-website-concept .
+$ npm install
+$ npm run watch:all
+```
